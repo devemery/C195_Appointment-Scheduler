@@ -20,7 +20,7 @@ public class DBConnection {
     //JDBC URL parts
     private static final String protocol = "jdbc";
     private static final String vendorName = ":mysql:";
-    private static final String serverAddr = "//wgudb.ucertify.com/U06NWD";
+    private static final String serverAddr = "//wgudb.ucertify.com/REMOVED";
     
     //JDBC URL
     private static final String jdbcURL = protocol + vendorName + serverAddr;
