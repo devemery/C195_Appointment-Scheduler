@@ -30,8 +30,8 @@ public class DBConnection {
     private static Connection conn = null;
     
     //DB username and password
-    private static final String username = "U06NWD";
-    private static final String password = "53688814992";
+    private static final String username = "REMOVED";
+    private static final String password = "REMOVED";
     
     public static Connection getConnection() {
         
