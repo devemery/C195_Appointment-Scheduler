@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="230.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="220.0" prefWidth="320.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+         <children>
+            <Text layoutX="77.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C195 Appointment Scheduler">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="37.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+            <Text layoutX="38.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+            <TextField fx:id="usernameField" layoutX="110.0" layoutY="77.0" promptText="username" />
+            <TextField fx:id="passwordField" layoutX="110.0" layoutY="117.0" promptText="password" />
+            <Button fx:id="loginButton" layoutX="64.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#handlerLoginButton" prefHeight="25.0" prefWidth="80.0" text="Login" />
+            <Button fx:id="exitButton" layoutX="173.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#handlerExitButton" prefWidth="80.0" text="Exit" />
+            <AnchorPane fx:id="loginErrorBox" layoutX="38.0" layoutY="28.0" prefHeight="140.0" prefWidth="212.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10;" visible="false">
+               <children>
+                  <Text fill="#f20606" layoutX="5.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username and/or password is incorrect" textAlignment="CENTER" wrappingWidth="237.341796875" />
+                  <Button fx:id="loginErrorOKButton" layoutX="84.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#handlerLoginErrorOKButton" prefHeight="25.0" prefWidth="80.0" text="OK" />
+                  <Text fill="#f20606" layoutX="5.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ERROR:" textAlignment="CENTER" wrappingWidth="237.341796875" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

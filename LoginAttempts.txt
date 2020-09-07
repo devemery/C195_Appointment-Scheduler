@@ -1,0 +1,14 @@
+
+2020-08-24 17:34:07.956 | Username: test | Password: aaaa | Success: false
+2020-08-24 17:34:11.86 | Username: test | Password: test | Success: true
+2020-08-24 17:42:28.793 | Username: test | Password: test | Success: true
+2020-08-24 17:43:23.456 | Username: test | Password: test | Success: true
+2020-08-24 17:44:27.864 | Username: test | Password: test | Success: true
+2020-08-24 19:33:39.759 | Username: test | Password: test | Success: true
+2020-08-24 19:36:30.541 | Username: test | Password: test | Success: true
+2020-08-24 19:37:56.886 | Username: test | Password: test | Success: true
+2020-08-24 19:45:26.338 | Username: test | Password: test | Success: true
+2020-08-24 19:46:44.655 | Username: test | Password: test | Success: true
+2020-08-24 20:46:35.1 | Username: test | Password: test | Success: true
+2020-08-27 21:00:01.549 | Username: test | Password: test | Success: true
+2020-09-07 17:18:18.816 | Username: test | Password: test | Success: true

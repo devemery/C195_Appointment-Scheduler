@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="310.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="5.0" prefHeight="300.0" prefWidth="450.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: white;">
+         <children>
+            <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Appointments" wrappingWidth="120.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <TableView fx:id="AppointmentTable" layoutX="14.0" layoutY="49.0" prefHeight="164.0" prefWidth="424.0">
+               <columns>
+                  <TableColumn fx:id="apptIDCol" prefWidth="47.0" text="ID#" />
+                  <TableColumn fx:id="apptTitleCol" prefWidth="246.0" text="Appointment" />
+                  <TableColumn fx:id="apptDateCol" prefWidth="130.0" text="Date / Time" />
+               </columns>
+            </TableView>
+            <Button fx:id="apptAddButton" layoutX="268.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#handlerApptAddButton" prefHeight="25.0" prefWidth="80.0" text="Add" />
+            <Button fx:id="apptDeleteButton" layoutX="360.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#handlerApptDeleteButton" prefHeight="25.0" prefWidth="80.0" text="Delete" />
+            <Button fx:id="apptDetailsButton" layoutX="14.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#handlerApptDetailsButton" prefHeight="25.0" prefWidth="160.0" text="Details / Modify" />
+            <Text layoutX="192.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View By:" />
+            <RadioButton fx:id="monthRadioButtom" layoutX="302.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#handlerMonthRadio" selected="true" text="Month">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Calendar" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="weekRadioButton" layoutX="374.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#handlerWeekRadio" text="Week" toggleGroup="$Calendar" />
+            <Button fx:id="mainScreenExit" layoutX="360.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#handlerMainScreenExit" prefHeight="25.0" prefWidth="80.0" text="Exit" />
+            <Button fx:id="customerButton" layoutX="14.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#handlerCustomerScreen" prefHeight="25.0" prefWidth="80.0" text="Customers" />
+            <RadioButton fx:id="allRadioButton" layoutX="252.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#handlerAllRadio" text="All" toggleGroup="$Calendar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

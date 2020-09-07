@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="410.0" prefWidth="280.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+         <children>
+            <Text layoutX="39.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Customer" textAlignment="CENTER" wrappingWidth="105.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" />
+            <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" />
+            <Text layoutX="14.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street Address" />
+            <Text layoutX="14.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street Address 2" />
+            <Text layoutX="17.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" />
+            <Text layoutX="15.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Code" />
+            <Text layoutX="17.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" />
+            <Text layoutX="17.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+            <TextField fx:id="idField" disable="true" editable="false" layoutX="107.0" layoutY="43.0" prefHeight="25.0" prefWidth="105.0" promptText="Auto-Generated">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="customerNameField" layoutX="107.0" layoutY="83.0" />
+            <TextField fx:id="streetAddrField" layoutX="107.0" layoutY="123.0" />
+            <TextField fx:id="streetAddrField2" layoutX="107.0" layoutY="163.0" />
+            <TextField fx:id="cityField" layoutX="107.0" layoutY="203.0" />
+            <TextField fx:id="postalCodeField" layoutX="107.0" layoutY="243.0" />
+            <TextField fx:id="countryField" layoutX="107.0" layoutY="283.0" />
+            <TextField fx:id="phoneField" layoutX="107.0" layoutY="323.0" />
+            <Button fx:id="modifyCustExitButton" layoutX="166.0" layoutY="367.0" mnemonicParsing="false" onMouseClicked="#handlerExitButton" prefWidth="80.0" text="Exit" />
+            <Button fx:id="modifyCustSaveButton" layoutX="34.0" layoutY="367.0" mnemonicParsing="false" onMouseClicked="#handlerSaveButton" prefWidth="80.0" text="Save" />
+            <CheckBox fx:id="activeBox" layoutX="160.0" layoutY="14.0" mnemonicParsing="false" selected="true" text="Active" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
